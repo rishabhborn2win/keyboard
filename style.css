@@ -7,8 +7,13 @@
 	border-radius: 20px;
 	border: solid;
 	border-color: black;
+<<<<<<< HEAD
 	top:10rem;
 	left:27.65rem;
+=======
+	top:60px;
+	left:175px;
+>>>>>>> parent of 88e20ea... Delete style.css
 	background-color: #D3D3D3;
 	border-color: #D3D3D3;
 	height:625px;
@@ -22,7 +27,11 @@ button:active{
 }
 
 #Keyboard{
+<<<<<<< HEAD
 	visibility: hidden; 
+=======
+	visibility: hidden;
+>>>>>>> parent of 88e20ea... Delete style.css
 }
 
 #light{
@@ -69,12 +78,19 @@ button:active{
 }
 
 .result{
+<<<<<<< HEAD
 	margin: auto;
 	border:solid;
 	border-color: gray;	
 	width:54%;
 	height: 5rem;
 	overflow-y: auto;
+=======
+	margin-left: 165px;
+	border:solid;
+	border-color: gray;	
+	width:1000px;
+>>>>>>> parent of 88e20ea... Delete style.css
 }
 
 .keys-container{
@@ -307,6 +323,10 @@ button:active{
 
 .mouse-pad p{
 	text-align: center;
+<<<<<<< HEAD
 	margin-top: 160px;
+=======
+	margin-top: 160px;px;
+>>>>>>> parent of 88e20ea... Delete style.css
 	font-size: 30px;
 }
