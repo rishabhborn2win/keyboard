@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Keyboard</title>
+	<link rel="stylesheet" type="text/css" href="style.css">	 
+</head>
+<body>
+
+	<div id="container">
+		<div class="notch">
+		</div>
+		<div class="power-alert" id="power">
+			<label class="alert">
+		</div>
+		<div class="power-button">
+			<button onclick="changeAlert()"><img src="power.jpg.png"></button>
+		</div>
+		<div class="keys-container" id="Keyboard">
+
+			<!-- first row -->
+		   <div class="top">
+			<button class="top-row">esc</button>
+			<button class="top-row">f1</button>
+			<button class="top-row">f2</button>
+			<button class="top-row">f3</button>
+			<button class="top-row">f4</button>
+			<button class="top-row">f5</button>
+			<button class="top-row">f6</button>
+			<button class="top-row">f7</button>
+			<button class="top-row">f8</button>
+			<button class="top-row">f9</button>
+			<button class="top-row">f10</button>
+			<button class="top-row">f11</button>
+			<button class="top-row">f12</button>
+			<button class="top-row">pause break</button>
+			<button class="top-row">prt sc sysrq</button>
+			<button class="top-row">delete insert</button>
+			<button class="top-row">home</button>
+			<button class="top-row">pgup</button>
+			<button class="top-row">pgdn</button>
+			<button class="top-row">end</button>
+		  </div>
+
+		  <!-- second row -->
+		  <div class="second-row">
+		  	<button id="second-first">~ <br> `</button>
+			<button>! <br> 1</button>
+			<button>@ <br> 2 
+			</button>
+			<button># <br> 3</button>
+			<button>$ <br> 4</button>
+			<button>% <br> 5</button>
+			<button>^ <br> 6</button>
+			<button>& <br> 7</button>
+			<button>* <br> 8</button>
+			<button>( <br> 9</button>
+			<button>) <br> 0</button>
+			<button>_ <br> -</button>
+			<button>+ <br> =</button>
+			<button id="bck">backsapce</button>
+			<button id="num">num lk <br> scr lk</button>
+			<button>/</button>
+			<button>*</button>
+			<button>-</button>
+		   </div>
+
+		   <!-- third row -->
+		     <div class="third-row">
+		  	<button id="tab">tab</button>
+			<button>Q</button>
+			<button>W</button>
+			<button>E</button>
+			<button>R</button>
+			<button>T</button>
+			<button>Y</button>
+			<button>U</button>
+			<button>I</button>
+			<button>O</button>
+			<button>P</button>
+			<button>{ </button>
+			<button>} </button>
+			<button id="sps">| </button>
+			<button>7</button>
+			<button>8</button>
+			<button>9</button>
+			<button id="plus">+</button>
+		   </div>
+
+		   <!-- fourth row -->
+		     <div class="fourth-row">
+		  	<button id="caps">caps lock</button>
+			<button>A</button>
+			<button>S</button>
+			<button>D</button>
+			<button>F</button>
+			<button>G</button>
+			<button>H</button>
+			<button>J</button>
+			<button>K</button>
+			<button>L</button>
+			<button>: </button>
+			<button>" </button>
+			<button id="enter">enter</button>
+			<button>4</button>
+			<button>5</button>
+			<button>6</button>
+		   </div>
+
+		   <!-- fifth row -->
+		     <div class="fifth-row">
+		  	<button id="shift">shift</button>
+			<button>Z</button>
+			<button>X</button>
+			<button>C</button>
+			<button>V</button>
+			<button>B</button>
+			<button>N</button>
+			<button>M</button>
+			<button class="arrow">< </button>
+			<button class="arrow">> </button>
+			<button class="arrow">? </button>
+			<button id="shift-short">shift</button>
+			<button>&#8593;</button>
+			<button>1</button>
+			<button>2</button>
+			<button>3</button>
+			<button id="enter-long">enter</button>
+		   </div>
+
+		   <!-- sixth row -->
+		     <div class="sixth-row">
+		  	<button id="ctrl">ctrl</button>
+			<button>fn</button>
+			<button>#</button>
+			<button>alt</button>
+			<button id="space" onclick="printMessage()">space bar</button>
+			<button>alt</button>
+			<button>&#9728;</button>
+			<button id="ctrl-long">ctrl</button>
+			<button>&#8592;</button>
+			<button>&#8595;</button>
+			<button>&#8594;</button>
+			<button>0</button>
+			<button>.</button>
+		   </div>
+		</div>	
+		<div class="mouse-pad">
+			<p>|</p>
+	    </div>	
+	</div>	
+<script type="text/javascript">
+	function printMessage(){
+		console.log("button has been clicked");
+	}	
+
+	function changeAlert(){
+     var color=document.getElementById('power').style.backgroundColor;
+	if(color==='red')
+	{
+		color="green";
+		 document.getElementById('power').style.backgroundColor=color;
+		 document.getElementById('Keyboard').style.visibility="visible";
+	}else{
+		color='red';
+			document.getElementById('Keyboard').style.visibility="hidden";
+			document.getElementById('power').style.backgroundColor=color;
+	}
+}
+
+</script>
+</body>
+</html>
