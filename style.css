@@ -34,9 +34,10 @@ button:active{
 }
 
 .power-button button{
+	visibility: hidden;
 	margin-top: 60px;
 	margin-left: 28px;
-		border:solid;
+	border:solid;
 	border-radius: 5px;
 	border-color: black;
 	background-color: black;
@@ -45,6 +46,7 @@ button:active{
 	width:50px;
 }
 .power-button img{
+	visibility: hidden;
 	height:15px;
 	width: 30px;
 }
@@ -249,6 +251,10 @@ button:active{
 
 #ctrl-long{
 	width:95px;
+}
+
+#mouse{
+	visibility: hidden;
 }
 
 #ctrl{
