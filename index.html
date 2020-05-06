@@ -5,9 +5,13 @@
 	<link rel="stylesheet" type="text/css" href="style.css">	 
 </head>
 <body>
+<<<<<<< HEAD
 	<div class="result" id="res" style="margin-bottom: 5rem;">
 		<p id="output"></p>
 		</div>
+=======
+
+>>>>>>> parent of 36d05f7... Delete index.html
 	<div id="container">
 		<div class="notch">
 		</div>
@@ -59,11 +63,19 @@
 			<button>) <br> 0</button>
 			<button>_ <br> -</button>
 			<button>+ <br> =</button>
+<<<<<<< HEAD
 			<button id="bck" onclick="back()">backsapce</button>
 			<button id="num" onclick="numlight()"><div id="num-light"></div>num lk <br> scr lk</button>
 			<button onclick="num('/')">/</button>
 			<button onclick="num('*')">*</button>
 			<button onclick="num('-')">-</button>
+=======
+			<button id="bck">backsapce</button>
+			<button id="num" onclick="numlight()"><div id="num-light"></div>num lk <br> scr lk</button>
+			<button>/</button>
+			<button>*</button>
+			<button>-</button>
+>>>>>>> parent of 36d05f7... Delete index.html
 		   </div>
 
 		   <!-- third row -->
@@ -79,6 +91,7 @@
 			<button id="i" onclick="alpha('i')">I</button>
 			<button id="o" onclick="alpha('o')">O</button>
 			<button id="p" onclick="alpha('p')">P</button>
+<<<<<<< HEAD
 			<button onclick="alpha('{')">{ </button>
 			<button onclick="alpha('}')">} </button>
 			<button id="sps" onclick="alpha('|')">| </button>
@@ -86,6 +99,15 @@
 			<button onclick="num('8')">8</button>
 			<button onclick="num('9')">9</button>
 			<button id="plus" onclick="num('+')">+</button>
+=======
+			<button >{ </button>
+			<button>} </button>
+			<button id="sps">| </button>
+			<button>7</button>
+			<button>8</button>
+			<button>9</button>
+			<button id="plus">+</button>
+>>>>>>> parent of 36d05f7... Delete index.html
 		   </div>
 
 		   <!-- fourth row -->
@@ -100,12 +122,21 @@
 			<button id="j" onclick="alpha('j')">J</button>
 			<button id="k" onclick="alpha('k')">K</button>
 			<button id="l" onclick="alpha('l')">L</button>
+<<<<<<< HEAD
 			<button onclick="alpha(':')">: </button>
 			<button onclick="alpha('&quot')">" </button>
 			<button id="enter" onclick="enterKey()">enter</button>
 			<button onclick="num('4')">4</button>
 			<button onclick="num('5')">5</button>
 			<button onclick="num('6')">6</button>
+=======
+			<button>: </button>
+			<button>" </button>
+			<button id="enter">enter</button>
+			<button>4</button>
+			<button>5</button>
+			<button>6</button>
+>>>>>>> parent of 36d05f7... Delete index.html
 		   </div>
 
 		   <!-- fifth row -->
@@ -118,6 +149,7 @@
 			<button id="b" onclick="alpha('b')">B</button>
 			<button id="n" onclick="alpha('n')">N</button>
 			<button id="m" onclick="alpha('m')">M</button>
+<<<<<<< HEAD
 			<button class="arrow" onclick="alpha('&lt')">< </button>
 			<button class="arrow" onclick="alpha('&gt')">> </button>
 			<button class="arrow" onclick="alpha('?')">? </button>
@@ -127,6 +159,17 @@
 			<button onclick="num('2')">2</button>
 			<button onclick="num('3')">3</button>
 			<button id="enter-long" onclick="enterKey()">enter</button>
+=======
+			<button class="arrow">< </button>
+			<button class="arrow">> </button>
+			<button class="arrow">? </button>
+			<button id="shift-short">shift</button>
+			<button>&#8593;</button>
+			<button>1</button>
+			<button>2</button>
+			<button>3</button>
+			<button id="enter-long">enter</button>
+>>>>>>> parent of 36d05f7... Delete index.html
 		   </div>
 
 		   <!-- sixth row -->
@@ -142,20 +185,32 @@
 			<button>&#8592;</button>
 			<button>&#8595;</button>
 			<button>&#8594;</button>
+<<<<<<< HEAD
 			<button  onclick="num('0')">0</button>
 			<button onclick="num('.')">.</button>
+=======
+			<button>0</button>
+			<button>.</button>
+>>>>>>> parent of 36d05f7... Delete index.html
 		   </div>
 		</div>	
 		<div class="mouse-pad" id='mouse'>
 			<p>|</p>
 	    </div>	
 	</div>
+<<<<<<< HEAD
 		
 <script type="text/javascript">
 	var capsl=false;
 	var numl=false;
 	
 	setInterval(function() {document.getElementById('output').scrollIntoView(false); },5);
+=======
+	<div class="result">
+	<p id="output"></p>
+	</div>	
+<script type="text/javascript">
+>>>>>>> parent of 36d05f7... Delete index.html
 	alert("To Activate Keyboard Press The Power Button");
 	document.getElementById('powerbtn').style=" visibility: visible; margin-left:450px; margin-top:250px; height:100px; width:100px";
 	document.getElementById('image').style="visibility: visible; height:45px; width:60px;";
@@ -187,14 +242,19 @@ function light(){
 	document.getElementById('light').style.backgroundColor='white';
 		}else{
 			document.getElementById('light').style.backgroundColor='black';
+<<<<<<< HEAD
 			
 		}
 	capsl=!capsl;
+=======
+		}
+>>>>>>> parent of 36d05f7... Delete index.html
 }
 
 function numlight(){
     var color=document.getElementById('num-light').style.backgroundColor;
      if(color=='black'|| color==''){
+<<<<<<< HEAD
 		document.getElementById('num-light').style.backgroundColor='white';
 	}else{
 		document.getElementById('num-light').style.backgroundColor='black';
@@ -235,6 +295,25 @@ function back(){
 		document.getElementById('output').innerHTML = x;
 	}
 }
+=======
+	document.getElementById('num-light').style.backgroundColor='white';
+		}else{
+			document.getElementById('num-light').style.backgroundColor='black';
+		}
+
+}
+function alpha(alphabet){
+	if(alphabet=='space')
+	{ 
+		alpha=' ';
+		document.getElementById('output').innerHTML+=alpha;
+	}else{
+var alpha=document.getElementById(alphabet).innerHTML;
+document.getElementById('output').innerHTML+=alpha;
+}	
+}
+
+>>>>>>> parent of 36d05f7... Delete index.html
 function clearLabel(){
 	document.getElementById('output').innerHTML='';
 }
