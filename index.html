@@ -149,13 +149,9 @@
 	    </div>	
 	</div>	
 <script type="text/javascript">
-	function printMessage(){
-		console.log("button has been clicked");
-	}	
-
 	function changeAlert(){
      var color=document.getElementById('power').style.backgroundColor;
-	if(color==='red')
+	if(color==='red'|| color=='')
 	{
 		color="green";
 		 document.getElementById('power').style.backgroundColor=color;
