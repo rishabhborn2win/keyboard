@@ -144,7 +144,7 @@
 			<button>.</button>
 		   </div>
 		</div>	
-		<div class="mouse-pad">
+		<div class="mouse-pad" id="mouse">
 			<p>|</p>
 	    </div>	
 	</div>	
@@ -160,10 +160,12 @@
 		color="green";
 		 document.getElementById('power').style.backgroundColor=color;
 		 document.getElementById('Keyboard').style.visibility="visible";
+	         document.getElementById('mouse').style.visibility="visible";	
 	}else{
 		color='red';
 			document.getElementById('Keyboard').style.visibility="hidden";
 			document.getElementById('power').style.backgroundColor=color;
+		        document.getElementById('mouse').style.visibility="hidden";
 	}
 }
 
