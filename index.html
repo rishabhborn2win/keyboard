@@ -34,7 +34,7 @@
 			<button class="top-row">f12</button>
 			<button class="top-row">pause break</button>
 			<button class="top-row">prt sc sysrq</button>
-			<button class="top-row">delete insert</button>
+			<button class="top-row" id="delete" onclick="clearLabel()">delete insert</button>
 			<button class="top-row">home</button>
 			<button class="top-row">pgup</button>
 			<button class="top-row">pgdn</button>
@@ -58,7 +58,7 @@
 			<button>_ <br> -</button>
 			<button>+ <br> =</button>
 			<button id="bck">backsapce</button>
-			<button id="num">num lk <br> scr lk</button>
+			<button id="num" onclick="numlight()"><div id="num-light"></div>num lk <br> scr lk</button>
 			<button>/</button>
 			<button>*</button>
 			<button>-</button>
@@ -67,17 +67,17 @@
 		   <!-- third row -->
 		     <div class="third-row">
 		  	<button id="tab">tab</button>
-			<button>Q</button>
-			<button>W</button>
-			<button>E</button>
-			<button>R</button>
-			<button>T</button>
-			<button>Y</button>
-			<button>U</button>
-			<button>I</button>
-			<button>O</button>
-			<button>P</button>
-			<button>{ </button>
+			<button id="q" onclick="alpha('q')">Q</button>
+			<button id='w' onclick="alpha('w')">W</button>
+			<button id="e" onclick="alpha('e')">E</button>
+			<button id="r" onclick="alpha('r')">R</button>
+			<button id="t" onclick="alpha('t')">T</button>
+			<button id="y" onclick="alpha('y')">Y</button>
+			<button id="u" onclick="alpha('u')">U</button>
+			<button id="i" onclick="alpha('i')">I</button>
+			<button id="o" onclick="alpha('o')">O</button>
+			<button id="p" onclick="alpha('p')">P</button>
+			<button >{ </button>
 			<button>} </button>
 			<button id="sps">| </button>
 			<button>7</button>
@@ -88,16 +88,16 @@
 
 		   <!-- fourth row -->
 		     <div class="fourth-row">
-		  	<button id="caps">caps lock</button>
-			<button>A</button>
-			<button>S</button>
-			<button>D</button>
-			<button>F</button>
-			<button>G</button>
-			<button>H</button>
-			<button>J</button>
-			<button>K</button>
-			<button>L</button>
+		  	<button id="caps" onclick="light()"><div id="light"></div><div class="name">caps lock</div></button>
+			<button id="a" onclick="alpha('a')">A</button>
+			<button id="s" onclick="alpha('s')">S</button>
+			<button id="d" onclick="alpha('d')">D</button>
+			<button id="f" onclick="alpha('f')">F</button>
+			<button id="g" onclick="alpha('g')">G</button>
+			<button id="h" onclick="alpha('h')">H</button>
+			<button id="j" onclick="alpha('j')">J</button>
+			<button id="k" onclick="alpha('k')">K</button>
+			<button id="l" onclick="alpha('l')">L</button>
 			<button>: </button>
 			<button>" </button>
 			<button id="enter">enter</button>
@@ -109,13 +109,13 @@
 		   <!-- fifth row -->
 		     <div class="fifth-row">
 		  	<button id="shift">shift</button>
-			<button>Z</button>
-			<button>X</button>
-			<button>C</button>
-			<button>V</button>
-			<button>B</button>
-			<button>N</button>
-			<button>M</button>
+			<button id="z" onclick="alpha('z')">Z</button>
+			<button id="x" onclick="alpha('x')">X</button>
+			<button id="c" onclick="alpha('c')">C</button>
+			<button id="v" onclick="alpha('v')">V</button>
+			<button id="b" onclick="alpha('b')">B</button>
+			<button id="n" onclick="alpha('n')">N</button>
+			<button id="m" onclick="alpha('m')">M</button>
 			<button class="arrow">< </button>
 			<button class="arrow">> </button>
 			<button class="arrow">? </button>
@@ -133,7 +133,7 @@
 			<button>fn</button>
 			<button>#</button>
 			<button>alt</button>
-			<button id="space">space bar</button>
+			<button id="space" onclick="alpha('space')"> space</button>
 			<button>alt</button>
 			<button>&#9728;</button>
 			<button id="ctrl-long">ctrl</button>
@@ -147,6 +147,9 @@
 		<div class="mouse-pad" id='mouse'>
 			<p>|</p>
 	    </div>	
+	</div>
+	<div class="result">
+	<p id="output"></p>
 	</div>	
 <script type="text/javascript">
 	alert("To Activate Keyboard Press The Power Button");
@@ -173,6 +176,40 @@
 	document.getElementById('image').style="visibility: visible; height:45px; width:60px;";
 }
 }
+
+function light(){
+    var color=document.getElementById('light').style.backgroundColor;
+     if(color=='black'|| color==''){
+	document.getElementById('light').style.backgroundColor='white';
+		}else{
+			document.getElementById('light').style.backgroundColor='black';
+		}
+}
+
+function numlight(){
+    var color=document.getElementById('num-light').style.backgroundColor;
+     if(color=='black'|| color==''){
+	document.getElementById('num-light').style.backgroundColor='white';
+		}else{
+			document.getElementById('num-light').style.backgroundColor='black';
+		}
+
+}
+function alpha(alphabet){
+	if(alphabet=='space')
+	{ 
+		alpha=' ';
+		document.getElementById('output').innerHTML+=alpha;
+	}else{
+var alpha=document.getElementById(alphabet).innerHTML;
+document.getElementById('output').innerHTML+=alpha;
+}	
+}
+
+function clearLabel(){
+	document.getElementById('output').innerHTML='';
+}
+
 
 </script>
 </body>

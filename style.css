@@ -25,6 +25,23 @@ button:active{
 	visibility: hidden;
 }
 
+#light{
+	background-color: black;
+	border-radius:5px;
+	width:2px;
+	height:3px;
+	white-space: pre;
+	margin-bottom: 2px;
+}
+#num-light{
+	background-color: black;
+	border-radius:5px;
+	width:2px;
+	height:3px;
+	white-space: pre;
+	margin-bottom: 2px;
+}
+
 .power-alert{
 	margin-left:980px;
 	background-color: red;
@@ -51,6 +68,12 @@ button:active{
 	width: 30px;
 }
 
+.result{
+	margin-left: 165px;
+	border:solid;
+	border-color: gray;	
+	width:1000px;
+}
 
 .keys-container{
 	position: relative;
@@ -75,6 +98,7 @@ button:active{
 	line-height: 0.4px;
 	letter-spacing: 0.112em;
 	text-align: bottom;
+	white-space: pre;
 
 }
 
